@@ -1,35 +1,38 @@
 import React, { useState } from 'react'
-import { Text, View, Button } from 'react-native';
+import { Text, View, StyleSheet } from 'react-native';
+import { Fab } from '../components/Fab';
 
 export const ContadorScreen = () => {
 
-    const [contador, setContador] = useState(10);
+    const [contador, setContador] = useState(11);
 
     return (
-        <View style={{
-            flex: 1,
-            justifyContent: 'center',
-        }}>
-            <Text style={{
-                textAlign: 'center',
-                fontSize: 40,
-                top: -15
-            }}>Contador: {contador}</Text>
+        <View style={ styles.container }>
 
-            <Button
-                onPress={ () => setContador( contador + 1) }
-                title="Click"
-                color="#841584"
-                accessibilityLabel="Learn more about this purple button"
+            <Text style={ styles.title }> Contador: { contador } </Text>
+
+            <Fab
+                title="-1"
+                onPress={ () => setContador(contador - 1) }
+                position='bl'
             />
 
-            <Button
-                onPress={ () => setContador( contador - 1) }
-                title="Click"
-                color="#000"
-                accessibilityLabel="Learn more about this purple button"
+            <Fab
+                title="+1"
+                onPress={ () => setContador(contador + 1) }
             />
-
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+    },
+    title: {
+        fontSize: 40,
+        textAlign: 'center',
+        top: -15
+    }
+})
