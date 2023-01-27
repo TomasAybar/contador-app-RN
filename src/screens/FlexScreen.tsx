@@ -17,9 +17,9 @@ const styles = StyleSheet.create({
         flex : 1,
         // height: 300,
         backgroundColor: '#28c4d9',
-        flexDirection: 'row',
-        justifyContent:'flex-end',
-        alignItems:'flex-end',
+        // flexDirection: 'row',
+        // justifyContent:'flex-start',
+        // alignItems:'flex-start',
     },
 
     caja1: {
@@ -29,18 +29,21 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         borderColor: 'white',
         fontSize: 30,
+        // alignSelf:'center',
     },
     caja2: {
         // flex: 2,
         borderWidth: 2,
         borderColor: 'white',
         fontSize: 30,
+        // alignSelf:'flex-start'
     },
     caja3: {
         // flex: 1,
         borderWidth: 2,
         borderColor: 'white',
         fontSize: 30,
+        // alignSelf:'flex-end'
     }
 
 });
