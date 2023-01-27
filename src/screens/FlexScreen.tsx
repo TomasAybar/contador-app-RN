@@ -18,8 +18,9 @@ const styles = StyleSheet.create({
         // height: 300,
         backgroundColor: '#28c4d9',
         // flexDirection: 'row',
-        // justifyContent:'flex-start',
-        // alignItems:'flex-start',
+        // justifyContent:'center',
+        // alignItems:'center',
+        // flexWrap:'wrap'
     },
 
     caja1: {
