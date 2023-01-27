@@ -15,13 +15,17 @@ const styles = StyleSheet.create({
     
     container: {
         flex : 1,
+        // height: 300,
         backgroundColor: '#28c4d9',
         flexDirection: 'row',
+        justifyContent:'flex-end',
+        alignItems:'flex-end',
     },
 
     caja1: {
         // flex: 3, // 3 + 2 + 1 = 6
         // flex:1,
+        // width:'100%',
         borderWidth: 2,
         borderColor: 'white',
         fontSize: 30,
